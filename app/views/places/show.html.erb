@@ -1,6 +1,6 @@
-<div>
+<div class="row">
   <p><%= @place.name %> <%= @place.geo %> <%= link_to '<span class="fa fa-edit">'.html_safe, edit_place_path(@place)  %></p>
-  <div>
+  <div class="col s3">
     <% @place.images.each do |i| %>
       <%= image_tag "https://drive.google.com/uc?id=" + i.drive_url, style: "width:200px" %>
     <% end %>

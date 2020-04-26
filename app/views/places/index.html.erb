@@ -1,9 +1,9 @@
 <h1>UsPlaces</h1>
 <p><%= link_to "+ Place", new_place_path %></p>
-<div>
+<div class="row">
   <% if @places.any? %>
     <% @places.each do |p| %>
-      <div>
+      <div class="col s4">
         <p><%= link_to "#{p.name} #{p.geo}", place_path(p) %></p>
         <div>
           <iframe width="300" height="300" frameborder="0" style="border:0"
