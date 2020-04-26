@@ -7,7 +7,6 @@ end
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'bundler', '2.1.4'
 gem 'rails', '~> 6.0.2.2', '>= 5.0.7.2'
 # Use mysql2 as the database for Active Record
 gem 'mysql2'
