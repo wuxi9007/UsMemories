@@ -29,9 +29,11 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: postgresql
-  encoding: unicode
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
   database: usmemories_prod
   pool: 5
-  username: myapp
-  password: password1
+  username: root
+  password:
+  socket: /tmp/mysql.sock
