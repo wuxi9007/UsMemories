@@ -14,7 +14,7 @@ gem 'mysql2'
 gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
-gem 'materialize-sass'
+gem 'materialize-sass', '~> 1.0.0.beta'
 gem 'material_icons'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
