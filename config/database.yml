@@ -32,6 +32,3 @@ production:
   adapter: postgresql
   encoding: unicode
   database: usmemories_prod
-  pool: 5
-  username: root
-  password:
