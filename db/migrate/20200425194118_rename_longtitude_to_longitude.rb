@@ -1,4 +1,4 @@
-class RenameLongtitudeToLongitude < ActiveRecord::Migration[6.0]
+class RenameLongtitudeToLongitude < ActiveRecord::Migration[5.0]
   def change
     rename_column :places, :longtitude, :longitude
   end
