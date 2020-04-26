@@ -1,0 +1,10 @@
+<tr>
+  <td><%= f.text_field :name %></td>
+  <td><%= f.text_field :drive_url %></td>
+  <td><%= f.text_field :memo %></td>
+  <td><%= f.text_field :taken_time %></td>
+  <td>
+      <%= f.text_field :_destroy, style: "visibility:hidden;height:0" %>
+      <%= link_to '<span class="fa fa-remove"/>'.html_safe, '#', class: "remove_image" %>
+  </td>
+</tr>

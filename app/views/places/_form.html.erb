@@ -1,0 +1,32 @@
+<%= form_for(place) do |f| %>
+  <div>
+    Name of place: <%= f.text_field :name %>
+  </div>
+  <div>
+    Longitude: <%= f.number_field :longitude %>
+  </div>
+  <div>
+    Latitude: <%= f.number_field :latitude %>
+  </div>
+
+  <p>Images</p>
+  <table class='table'>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Google Drive Url</th>
+        <th>Memo</th>
+        <th>Time taken</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody class='fields'>
+      <%= f.fields_for :images do |img| %>
+        <%= render 'image', f: img %>
+      <% end %>
+    </tbody>
+  </table>
+
+  <%= f.submit %>
+  <%= link_to_add_row('+ image', f, :images) %>
+<% end %>
