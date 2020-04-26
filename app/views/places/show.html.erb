@@ -2,7 +2,7 @@
   <p><%= @place.name %> <%= @place.latitude %>,<%= @place.longitude %> <%= link_to '<span class="fa fa-edit">'.html_safe, edit_place_path(@place)  %></p>
   <div>
     <% @place.images.each do |i| %>
-      <%= image_tag i.drive_url, style: "width:200px" %>
+      <%= image_tag "https://drive.google.com/uc?id=" + i.drive_url, style: "width:200px" %>
     <% end %>
   </div>
 

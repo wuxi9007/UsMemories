@@ -17,7 +17,7 @@
 //= require materialize-sprockets
 $(document).on('turbolinks:load', function() {
 
-  $('form').on('click', '.remove_record', function(event) {
+  $('form').on('click', '.remove_image', function(event) {
     $(this).prev('input[type=hidden]').val('1');
     $(this).closest('tr').hide();
     return event.preventDefault();
