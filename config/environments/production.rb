@@ -48,6 +48,7 @@ Rails.application.configure do
 
   # Prepend all log lines with the following tags.
   config.log_tags = [ :request_id ]
+  ENV['google_maps_api_key'] = 'AIzaSyDM1SfBZhdGDYgGFwgxlo6NTArWibNDCsQ'
 
   # Use a different cache store in production.
   # config.cache_store = :mem_cache_store
