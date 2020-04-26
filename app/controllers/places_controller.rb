@@ -47,6 +47,6 @@ class PlacesController < ApplicationController
   end
 
   def place_params
-  	params.require(:place).permit(:name, :longitude, :latitude, images_attributes: Image.attribute_names.map(&:to_sym).push(:_destroy))
+  	params.require(:place).permit(:name, :geo, images_attributes: Image.attribute_names.map(&:to_sym).push(:_destroy))
   end
 end
