@@ -3,10 +3,10 @@
     Name of place: <%= f.text_field :name %>
   </div>
   <div>
-    Longitude: <%= f.number_field :longitude %>
+    Longitude: <%= f.number_field :longitude, step: 0.00000001 %>
   </div>
   <div>
-    Latitude: <%= f.number_field :latitude %>
+    Latitude: <%= f.number_field :latitude, step: 0.00000001 %>
   </div>
 
   <p>Images</p>
