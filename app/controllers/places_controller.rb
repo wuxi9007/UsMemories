@@ -3,7 +3,7 @@ class PlacesController < ApplicationController
 
   def new
   	@place = Place.new
-    @place.tasks.build
+    @place.images.build
   end
 
   def index
