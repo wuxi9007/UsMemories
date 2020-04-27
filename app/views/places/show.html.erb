@@ -5,7 +5,7 @@
       <div class="col s3">
         <% url = "https://drive.google.com/uc?id=" + i.drive_url %>
         <%= link_to url do %>
-          <%= image_tag "https://drive.google.com/uc?id=" + i.drive_url, style: "width:200px", class: "image-hover" %>
+          <%= image_tag url, style: "width:200px", class: "image-hover" %>
         <% end %>
       </div>
     <% end %>
