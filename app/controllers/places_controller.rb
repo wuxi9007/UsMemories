@@ -23,10 +23,10 @@ class PlacesController < ApplicationController
   def create
     @place = Place.new(place_params)
     respond_to do |format|
-      @place.images.each do |i|
-        i.drive_url = i.drive_url.split("/open?id=")[1]
-      end
       if @place.save
+        @place.images.each do |i|
+          i.drive_url = i.drive_url.split("/open?id=")[-1]
+        end
         format.html {
           redirect_to places_url(notice: 'Place was successfully created.')
         }
