@@ -17,3 +17,11 @@
 
  @import "materialize";
  @import "font-awesome";
+
+ .image-hover {
+   transition: transform .2s ease;
+ }
+
+ .image-hover:hover {
+   transform: scale(1.05);
+ }
