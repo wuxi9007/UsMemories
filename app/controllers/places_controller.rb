@@ -38,10 +38,8 @@ class PlacesController < ApplicationController
 
   def update
   	respond_to do |format|
+      place_params['images_attributes'].each { |k, v| p v }
       if @place.update(place_params)
-        @place.images.each do |i|
-          i.drive_url = i.drive_url.split("/open?id=")[-1]
-        end
         format.html { redirect_to place_path(notice: 'Place successfully updated.') }
       else
         format.html { render :edit }

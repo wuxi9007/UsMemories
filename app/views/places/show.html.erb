@@ -1,5 +1,5 @@
 <div>
-  <p><%= @place.name %> <%= @place.geo %> <%= link_to '<span class="fa fa-edit">'.html_safe, edit_place_path(@place)  %></p>
+  <h3><%= @place.name %> <%= link_to '<span class="fa fa-edit">'.html_safe, edit_place_path(@place)  %></h3>
   <div class="row">
     <% @place.images.each do |i| %>
       <div class="col s3">
