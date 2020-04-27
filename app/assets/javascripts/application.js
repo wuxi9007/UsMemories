@@ -13,8 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require_tree .
 //= require materialize-sprockets
-$(document).on('turbolinks:load', function() {
+$(document).ready(function() {
 
   $('form').on('click', '.remove_image', function(event) {
     $(this).prev('input[type=hidden]').val('1');
